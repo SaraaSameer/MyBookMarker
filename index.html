@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+<head>
+
+  <title> Book Marker</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="StyleSheet.css">  
+  <script type="text/javascript" src="app.js"></script>
+  
+</head>
+
+<body>
+  <!--<img src="Book01.JPG"/>-->
+	 <div class="container">
+       <h1 class="text-center"> <span class="glyphicon glyphicon-bookmark"></span>  My<span class="head">Book</span>Marker </h1>
+       <form class="form-horizontal" id="myForm">
+       	  <div class="form-group">
+            <label for="title" class="required"> Book Title </label>
+            <input id="title" type="text" placeholder="Book Title" class=form-control>
+          </div>
+       <!-- Add class of form control-->
+          <div class="form-group">
+        	 <label for="author" class="required"> Author </label>
+             <input id="author" type="text" placeholder="Author Name" class="form-control">
+          </div>
+          <div class="form-group">
+        	 <label for="describe"> Description </label>
+             <textarea name="describe" placeholder="Any comments on book?" class="form-control" id="describe"> </textarea>
+          </div>
+          <div class="form-group">
+          	<button type="submit" class="form-control myButton" disabled="disabled" > <span class="glyphicon glyphicon-ok"></span>  Add Book</button>
+          </div>
+          <div class="form-group text-center">
+            <strong>Search-Mode: </strong><input  id="mode" type="checkbox" name="search" value="true">
+          </div>
+         </form>
+     </div>
+     <div class="container">
+     	<table class="table table-striped">
+     		<thead>
+     			<th> Title</th>
+     			<th> Author </th>
+     			<th> Description </th>
+     		</thead>
+     		<tbody>
+     			<tr>
+     				<td class="BookName"> Snowy Days </td>
+     				<td> Jane Brown </td>
+     				<td> The book was outstanding </td>
+     				<td><button type="button"><span class="glyphicon glyphicon-remove"></span></button></td>
+     			</tr>
+     			<tr>
+     				<td class="BookName"> Devil Days </td>
+     				<td> Peter Henry </td>
+     				<td> Waste of Time!!! </td>
+     				<td><button type="button"><span class="glyphicon glyphicon-remove"></span></button></td>
+     			</tr>
+     			<tr>
+     				<td class="BookName"> Fourty Rules of Love </td>
+     				<td> Elif Shafak </td>
+     				<td> Phenomenal </td>
+     				<td><button type="button"><span class="glyphicon glyphicon-remove"></span></button></td>
+     			</tr>
+       </tbody>
+       </table>
+      </div>
+
+</body>
+</html>
