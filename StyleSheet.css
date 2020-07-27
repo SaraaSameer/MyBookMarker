@@ -1,0 +1,73 @@
+@media(max-width:768px)
+{
+	body
+	{
+		margin:0px 10px;
+	}
+}
+/*body{
+	background-image: url("Book02.JPG");
+	background-repeat:no-repeat;
+    }*/
+
+ img
+ {
+ 	opacity:0.9;
+ 	z-index: -1;
+ 	position: absolute;
+ 	width:100%;
+ 	height: 100%;
+ }
+ body
+ {
+ 	background-color: lavender;
+ }
+h1{
+	color:fuchsia;
+	text-shadow:  3px 3px aquamarine;
+	margin-bottom: 30px;
+}
+.head
+{
+	color:red;
+}
+.myButton
+{
+	background-color:darkorchid;
+	color:pink;
+	font-size:20px;
+    padding-top: 2px;
+	padding-bottom:2px; 
+}
+
+.required:after
+{
+   content:'*';
+   color:red;
+  font-weight: bolder;
+}
+tr:nth-child(odd)>td
+{
+	background-color: lightblue;
+}
+td>button
+{
+	color:black;
+	background-color: red;
+}
+
+strong
+{
+   font-size:17px;
+   color:green;
+}
+
+/* JS */
+ .text-danger
+ {
+ 	color:red;
+ }
+td>button>*
+{
+	pointer-events: none;
+}
